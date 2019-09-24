@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Electron reproducible</title>
+</head>
+
+<body>
+    <h1>Electron reproducible</h1>
+    <div>
+        <button id="simpleInvoke">Simple</button>
+        <button id="mediumInvoke">Medium</button>
+        <button id="complexInvoke">Complex</button>
+    </div>
+</body>
+
+<script type="text/javascript">
+    document.getElementById('simpleInvoke').addEventListener('click', function () {
+        const simpleArg = 'simple';
+        const invokeResult = window.reproduce.invoke(simpleArg);
+        console.log(invokeResult);
+    });
+
+    document.getElementById('mediumInvoke').addEventListener('click', function () {
+        const mediumObject = {
+            canvas: {
+                lanes: [
+                    {
+                        items: [
+                            {
+                                items: [
+
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        const invokeResult = window.reproduce.invoke(mediumObject);
+        console.log(invokeResult);
+    });
+
+    document.getElementById('complexInvoke').addEventListener('click', function () {
+        const complexObject = {
+            lanes: [
+                {
+                    items: [
+                        {
+                            canvas: {
+                                lanes: [
+                                    {
+                                        items: [
+                                            {
+                                                items: [
+
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        };
+
+        const invokeResult = window.reproduce.invoke(complexObject);
+        console.log(invokeResult);
+    });
+</script>
+
+</html>

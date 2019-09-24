@@ -1,0 +1,23 @@
+{
+  "name": "electron-submit",
+  "version": "1.0.0",
+  "description": "Electron reproducible",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashd2n/electron-submit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flashd2n/electron-submit/issues"
+  },
+  "homepage": "https://github.com/flashd2n/electron-submit#readme",
+  "devDependencies": {
+    "electron": "^6.0.10"
+  }
+}
