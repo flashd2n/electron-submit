@@ -16,13 +16,13 @@
 </body>
 
 <script type="text/javascript">
-    document.getElementById('simpleInvoke').addEventListener('click', function () {
+    document.getElementById('simpleInvoke').addEventListener('click', () => {
         const simpleArg = 'simple';
         const invokeResult = window.reproduce.invoke(simpleArg);
         console.log(invokeResult);
     });
 
-    document.getElementById('mediumInvoke').addEventListener('click', function () {
+    document.getElementById('mediumInvoke').addEventListener('click', () => {
         const mediumObject = {
             canvas: {
                 lanes: [
@@ -43,7 +43,7 @@
         console.log(invokeResult);
     });
 
-    document.getElementById('complexInvoke').addEventListener('click', function () {
+    document.getElementById('complexInvoke').addEventListener('click', () => {
         const complexObject = {
             lanes: [
                 {

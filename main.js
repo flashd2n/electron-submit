@@ -6,7 +6,7 @@ const url = require('url')
 
 let win;
 
-function createWindow() {
+const createWindow = () => {
 
     win = new BrowserWindow({
         width: 800,
